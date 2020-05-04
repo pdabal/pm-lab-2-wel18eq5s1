@@ -8,7 +8,7 @@ Data: 04.05.2020 r.
 
 # Informacje o studencie
 
-Imię i nazwisko studenta: Bartosz Chechłacz  
+Imię i nazwisko studenta: Bartosz Chechłacz
 Numer albumu: 71969
 Grupa studencka: WEL18EQ5S1
 
