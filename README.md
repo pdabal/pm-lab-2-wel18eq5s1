@@ -13,4 +13,8 @@ Numer albumu: 71969
 Grupa studencka: WEL18EQ5S1
 
 # Pytania do zadań z instrukcji
-...
+W jaki sposób można określić czas trwania
+opóźnienia zrealizowanego z użyciem pętli?
+
+(do dokończenia)
+
