@@ -1,7 +1,6 @@
 #include <avr/io.h>
-
-uint8_t ledState[] = {0xFF, 0x7E, 0x3C, 0x18, 0x00, 0x18, 0x3C, 0x7E};
-uint8_t *pLedState = ledState;
+#define SOLUTION 0
+uint8_t button;
 bool state = true;
 
 void togglePinD13(bool *state){
@@ -10,26 +9,27 @@ void togglePinD13(bool *state){
 }
 
 void delay(){
-  for (uint32_t j= 0x2FFFF; j > 0; j--){
+  for (uint32_t j = 0x1FFFF; j > 0; j--)
     __asm__ __volatile__("nop");
-  }
 }
 
 int main(){
+  DDRB &= !(1 << 0);
   DDRB |= (1 << 5);
-  DDRD |= 0xFF;
   while (1){
-    togglePinD13(&state);
-    delay();
-    for (uint8_t i = 0; i < sizeof(ledState); i++){
-      PORTD = ledState[i];
-      delay();
-    }
-      pLedState = ledState;
-      for (uint8_t i = 0; i < sizeof(ledState); i++){
-        PORTD = *pLedState;
-        pLedState++;
+    #if (SOLUTION == 0)
+      button = (PINB & (1 << PINB0));
+      if (button == 0){
+        togglePinD13(&state);
         delay();
       }
+      else
+        delay();
+    #elif (SOLUTION == 1)
+      while (!(PINB & (1 << PINB0))){
+        togglePinD13(&state);
+        delay();
+      }
+    #endif
   }
 }
