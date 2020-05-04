@@ -14,3 +14,5 @@ Grupa studencka: WELE18Q5S1
 
 # Pytania do zadań z instrukcji
 ...
+2.2.1 W jaki sposób można określić czas trwania opóźnienia zrealizowanego z użyciem pętli?
+- Można skorzystać z biblioteki Arduino i użyć funkcji millis() przed i po wykonaniu pętli while. Przypisać wartość startową (od uruchomienia programu) millis() do zmiennej oraz wartość millis() po zakończeniu programu i odjąć te wartości.
