@@ -14,3 +14,5 @@ Grupa studencka: WELE18Q5S1
 
 # Pytania do zadań z instrukcji
 ...
+W jaki sposób można określić czas trwania opóźnienia zrealizowanego z użyciem pętli?
+Korzystami z funkcji delay(X) gdzie X to wartość, którą ustalamy 
