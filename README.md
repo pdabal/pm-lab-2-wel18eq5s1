@@ -16,4 +16,4 @@ Grupa studencka: WEL18EQ5S1
 W jaki sposób można określić czas trwania
 opóźnienia zrealizowanego z użyciem pętli?
 
-Odp. uzyc funkcji millis() do zmiennej currentmillis. currentmillis - millis()
+Odp.  Do zmierzenia czasu opóźnienia uzyta została pętla do while, aby określić czas opóźnienia trzeba zmienic wartosc zmiennej i.
