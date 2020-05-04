@@ -8,9 +8,10 @@ Data: 04.05.2020 r.
 
 # Informacje o studencie
 
-Imię i nazwisko studenta: Imię Nazwisko  
-Numer albumu: 12345  
-Grupa studencka: WELE18Q5S1
+Imię i nazwisko studenta: Michał Kłosiewicz 
+Numer albumu: 69095
+Grupa studencka: WEL18Q5S1
 
 # Pytania do zadań z instrukcji
 ...
+2-2-1) Za opóźnienia odpowiada instrukcja NOP. Do zmierzenia czasu opóźnienia uyta zosłała pętla do while, w której zliczanie jest w doł.
