@@ -13,4 +13,5 @@ Numer albumu: 71972
 Grupa studencka: WEL18EQ5S1
 
 # Pytania do zadań z instrukcji
-...
+Zadanie 2.2.1:
+-czas opóźnienia możemy stwierdzić za pomocą czasu symulacji pomiędzy zapaleniem się diody a jej zgaśnięciem i wynosi około 7 sekund
