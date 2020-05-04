@@ -1,29 +1,41 @@
 #include <avr/io.h>
-#define LED_LENGHT 8
+
+uint8_t ledState[]= {0xFF,0x7E, 0x3C, 0x18, 0x00, 0x18, 0x3C, 0x7E};
+uint8_t *pLedState = ledState;
+bool state = true;
+
+void togglePinD13(bool *state)
+{
+      PORTC = (*state<<7);
+      *state = !(*state);
+}
+
+void delay()
+{
+  for (uint32_t j = 0x2FFFF; j > 0; j--)
+  {
+      __asm__ __volatile("nop");
+  }
+}
 
 int main()
 {
+  DDRC |= (1<<7);
   DDRD |= 0xFF;
   while (1)
   {
-    for (uint8_t i = 0; i < LED_LENGHT; i++)
+    togglePinD13(&state);
+    delay();
+    for (uint8_t i = 0; i < sizeof(ledState); i++)
     {
-    
-      PORTD = (1<< i);
-      for (uint32_t j = 0x1FFFF; j > 0 ; j--)
-      {
-      __asm__ __volatile("nop");
-      }
-
+      PORTD = ledState[i];
+      delay();
     }
-
-    for (uint8_t i = 1; i < LED_LENGHT-1; i++)
+    for (uint8_t i = 0; i < sizeof(ledState); i++)
     {
-       PORTD = (PORTD >> 1);
-     for (uint32_t j = 0x1FFFF; j > 0 ; j--)
-      {
-      __asm__ __volatile("nop");
-      }
+      PORTD = *pLedState;
+      pLedState++;
+      delay();
     }
   }
-}
+} 
