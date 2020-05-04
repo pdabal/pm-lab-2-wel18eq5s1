@@ -4,7 +4,7 @@ uint8_t button;
 bool state =true;
 void togglePinD13(bool *state)
 {
-  PORTB |= (*state<<5);
+  PORTB = (*state<<5);
   *state =!(*state);
 
 }
