@@ -13,4 +13,7 @@ Numer albumu: 72040
 Grupa studencka: WEL18EQ5S1
 
 # Pytania do zadań z instrukcji
-...
+W jaki sposób można określić czas trwania
+opóźnienia zrealizowanego z użyciem pętli?
+
+Odp. uzyc funkcji millis() do zmiennej currentmillis. currentmillis - millis()
