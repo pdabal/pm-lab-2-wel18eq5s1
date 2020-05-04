@@ -13,4 +13,4 @@ Numer albumu: 72022
 Grupa studencka: WELE18Q5S1
 
 # Pytania do zadań z instrukcji
-...
+odp na pytanie z 2.2.1: Należy zmienić watość zmiennej "i" będącą ilością uS które program ma odczekać wykonująć pętlę i razy.

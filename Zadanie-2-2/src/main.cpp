@@ -1,9 +1,9 @@
-
 #include <avr/io.h>
 
 int main()
 {
   uint32_t i;
+
   DDRC |= (1<<7);
   while (1)
   {
