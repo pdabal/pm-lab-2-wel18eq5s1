@@ -16,5 +16,5 @@ Grupa studencka: WEL18EQ5S1
 W jaki sposób można określić czas trwania
 opóźnienia zrealizowanego z użyciem pętli?
 
-(do dokończenia)
+Za każdym razem gdy pęatla zatacza koło do zmiennej i dodawana jest wartość jeden. W celu ograniczenia opóźnienia zmieniamy argument w miejscu X [PORTB = (1 << X);]
 
